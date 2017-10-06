@@ -1,6 +1,7 @@
 FROM alpine:3.6
 
-ENV SRC_NAME="" #source directory name
+# SRC_NAME : source directory name
+ENV SRC_NAME=""
 
 RUN apk --no-cache add apache2 perl
 RUN apk add global --update-cache --repository http://dl-3.alpinelinux.org/alpine/edge/testing/ --allow-untrusted
